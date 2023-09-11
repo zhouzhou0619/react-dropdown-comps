@@ -3,10 +3,14 @@ function App() {
     return (
         <div>
             <div>
-                <Button>Click me!!!</Button>
+                <Button success primary rounded outline>
+                    Click me!!!
+                </Button>
             </div>
             <div>
-                <Button>Buy now!</Button>
+                <Button danger outline>
+                    Buy now!
+                </Button>
             </div>
             <div>
                 <Button>See Deal!</Button>

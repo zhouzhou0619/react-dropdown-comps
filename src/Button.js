@@ -1,13 +1,15 @@
 import PropTypes from 'prop-types';
 function Button({ children, primary, secondary, success, warning, danger, outline, rounded }) {
-    if (primary && secondary) {
-        throw new Error('only one of primary and secondary should be ');
-    }
     return <button>{children}</button>;
 }
 Button.propTypes = {
-    primary: jashgdhjs,
-    danger: sjhdagjghj,
+    checkVariationValue: ({ primary, secondary, success, warning, danger }) => {
+        const count = Number(!!primary) + Number(!!secondary) + Number(!!success) + Number(!!warning) + Number(!!danger);
+
+        if (count > 1) {
+            return new Error('Only one of primary, secondary, success, warning, danger can be true');
+        }
+    },
 };
 
 export default Button;
