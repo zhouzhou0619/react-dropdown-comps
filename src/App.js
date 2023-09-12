@@ -13,13 +13,17 @@ function App() {
                 </Button>
             </div>
             <div>
-                <Button>See Deal!</Button>
+                <Button warning>See Deal!</Button>
             </div>
             <div>
-                <Button>Hide ads</Button>
+                <Button secondary rounded>
+                    Hide ads
+                </Button>
             </div>
             <div>
-                <Button>something!</Button>
+                <Button primary rounded>
+                    something!
+                </Button>
             </div>
         </div>
     );
